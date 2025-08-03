@@ -1,1 +1,1 @@
-
+After reviewing the solution and comparing to my week 08 assignment, I am missing a few things in my code that is in the solution. For one I am missing No set_month() this is so you can change the month better. My version only included set_day() which limited my flexibility. I also lack comments, which I need to start adding into my work. I also noticed that I had multiple return statements, vs the solution that uses one return.Overall to improve my work, I need to work on comments, and learning other functions to make my work for cleaner and clear.
