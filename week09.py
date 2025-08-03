@@ -50,3 +50,49 @@ def count_occurrences_iterative(data_list, target):
 
 # WRITE YOUR CODE BELOW
 
+def sum_of_digits(n):
+  """Returns the sum of the digits of a number recursively"""
+  if n < 10:
+     return n # its a single digit so its a base case
+  else:
+       return (n % 10) + sum_of_digits(n // 10) # its a recursive case
+
+
+
+def count_occurrences(data_list, target):
+    """Returns how many times target appears in data_list using recursion."""
+    if data_list == []:
+        return 0  # case empty list
+    else:
+        if data_list[0] == target:
+            return 1 + count_occurrences(data_list[1:], target)
+        else:
+            return count_occurrences(data_list[1:], target)
+
+
+def factorial_iterative(n):
+    """Returns n! using iteration."""
+    result = 1
+    for i in range(1, n + 1):
+        result = result * i
+    return result
+
+
+def fibonacci_iterative(n):
+    """Returns the nth Fibonacci number using iteration."""
+    if n == 1:
+        return 1
+    if n == 2:
+        return 2
+
+    first = 1
+    second = 2
+    current = 0
+
+    for i in range(3, n + 1):
+        current = first + second
+        first = second
+        second = current
+
+    return current
+
